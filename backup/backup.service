@@ -1,0 +1,8 @@
+[Unit]
+Description=Auto backup
+
+[Service]
+ExecStart=/home/vboxuser/backup/backup.sh
+
+[Install]
+WantedBy=default.target
