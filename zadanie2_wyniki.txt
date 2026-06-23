@@ -1,0 +1,25 @@
+=== 1. Wygenerowane klucze SSH ===
+-rw------- 1 vboxuser vboxuser 3381 Jun 23 18:56 /home/vboxuser/.ssh/learning_key
+-rw-r--r-- 1 vboxuser vboxuser  741 Jun 23 18:56 /home/vboxuser/.ssh/learning_key.pub
+=== 2. Zawartość SSH config ===
+Host learning-server
+    HostName 192.168.1.100
+    User vboxuser
+    IdentityFile ~/.ssh/learning_key
+    Port 22
+    StrictHostKeyChecking no
+=== 3. Logi SSH ===
+Jun 23 19:10:13 Ubuntu systemd[1]: Starting ssh.service - OpenBSD Secure Shell server...
+Jun 23 19:10:13 Ubuntu sshd[6803]: Server listening on 0.0.0.0 port 22.
+Jun 23 19:10:13 Ubuntu sshd[6803]: Server listening on :: port 22.
+Jun 23 19:10:13 Ubuntu systemd[1]: Started ssh.service - OpenBSD Secure Shell server.
+Jun 23 19:10:59 Ubuntu sshd-session[6808]: Connection closed by authenticating user vboxuser 127.0.0.1 port 36768 [preauth]
+Jun 23 19:11:05 Ubuntu sshd-session[6853]: Connection closed by authenticating user vboxuser 127.0.0.1 port 47916 [preauth]
+Jun 23 19:11:05 Ubuntu sshd-session[6860]: Connection closed by authenticating user vboxuser 127.0.0.1 port 47928 [preauth]
+Jun 23 19:11:35 Ubuntu sshd-session[6872]: Accepted password for vboxuser from 127.0.0.1 port 47930 ssh2
+Jun 23 19:11:35 Ubuntu sshd-session[6872]: pam_unix(sshd:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+Jun 23 19:12:09 Ubuntu sshd-session[6962]: Connection closed by authenticating user vboxuser 127.0.0.1 port 45660 [preauth]
+Jun 23 19:12:12 Ubuntu sshd-session[6985]: Accepted publickey for vboxuser from 127.0.0.1 port 38210 ssh2: RSA SHA256:pkrY6U+iciliRTJO8pflvzbi6HfcE7Q9Ixx138pAqe0
+Jun 23 19:12:12 Ubuntu sshd-session[6985]: pam_unix(sshd:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+=== 4. Test połączenia ===
+Polaczenie dziala
