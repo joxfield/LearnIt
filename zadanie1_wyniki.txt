@@ -1,0 +1,20 @@
+=== 1. Rozmiar oryginalnych danych ===
+21M	/home/vboxuser/learning_project/
+=== 2. Rozmiary archiwów ===
+-rw-rw-r-- 1 vboxuser vboxuser 415 Jun 23 18:37 /home/vboxuser/backup_bzip2.tar.bz2
+-rw-rw-r-- 1 vboxuser vboxuser 21K Jun 23 18:36 /home/vboxuser/backup_gzip.tar.gz
+-rw-rw-r-- 1 vboxuser vboxuser 21M Jun 23 18:36 /home/vboxuser/backup_raw.tar
+=== 3. Checksum MD5 ===
+91411a4fc4a7e1eef27bbda4271264a3  /home/vboxuser/backup_gzip.tar.gz
+=== 4. Zawartość archiwum ===
+drwxrwxr-x vboxuser/vboxuser 0 2026-06-23 18:20 home/vboxuser/learning_project/
+drwxrwxr-x vboxuser/vboxuser 0 2026-06-23 18:20 home/vboxuser/learning_project/docs/
+-rw-rw-r-- vboxuser/vboxuser 14 2026-06-23 18:20 home/vboxuser/learning_project/docs/README.md
+drwxrwxr-x vboxuser/vboxuser  0 2026-06-23 18:20 home/vboxuser/learning_project/data/
+-rw-rw-r-- vboxuser/vboxuser 20971520 2026-06-23 18:20 home/vboxuser/learning_project/data/sample.dat
+drwxrwxr-x vboxuser/vboxuser        0 2026-06-23 18:20 home/vboxuser/learning_project/config/
+-rw-rw-r-- vboxuser/vboxuser       13 2026-06-23 18:20 home/vboxuser/learning_project/config/settings.conf
+drwxrwxr-x vboxuser/vboxuser        0 2026-06-23 18:20 home/vboxuser/learning_project/src/
+-rw-rw-r-- vboxuser/vboxuser       12 2026-06-23 18:20 home/vboxuser/learning_project/src/main.sh
+drwxrwxr-x vboxuser/vboxuser        0 2026-06-23 18:20 home/vboxuser/learning_project/logs/
+=== 5. Diff (brak wyniku = pliki identyczne) ===
