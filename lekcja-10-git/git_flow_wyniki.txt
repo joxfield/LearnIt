@@ -1,0 +1,28 @@
+=== Historia commitów ===
+*   4cb2d33 Merge pull request #1 from joxfield/feature/api-docs
+|\  
+| * d0ae08d Enhance API docs
+| * 39b8d92 Add API documentation
+|/  
+| *   5e18fff Merge branch 'hotfix/critical-bug'
+| |\  
+| |/  
+|/|   
+* | ee57a7b Critical security patch
+|/  
+* 0fbb5c5 Release 1.0.0
+*   b47bf84 Merge branch 'feature/logging' into develop
+|\  
+| * c85f3ae Add logging documentation
+* | fececcc Add monitoring module
+|/  
+* 9d76882 Initial commit on develop
+=== Wszystkie gałęzie ===
+* develop
+  feature/logging
+  feature/monitoring
+  hotfix/critical-bug
+  main
+  release/1.0.0
+  remotes/origin/develop
+  remotes/origin/main
