@@ -1,0 +1,47 @@
+
+PLAY [Wdrożenie LAMP] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Host 'localhost' is using the discovered Python interpreter at '/usr/bin/python3.14', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.20/reference_appendices/interpreter_discovery.html for more information.
+ok: [localhost]
+
+TASK [base : Aktualizacja systemu] *********************************************
+ok: [localhost]
+
+TASK [base : Instalacja podstawowych pakietów] *********************************
+ok: [localhost]
+
+TASK [web : Instalacja Apache] *************************************************
+ok: [localhost]
+
+TASK [web : Uruchomienie Apache] ***********************************************
+ok: [localhost]
+
+TASK [database : Instalacja MySQL] *********************************************
+ok: [localhost]
+
+TASK [database : Uruchomienie MySQL] *******************************************
+ok: [localhost]
+
+TASK [database : Utworzenie bazy danych] ***************************************
+[WARNING]: Deprecation warnings can be disabled by setting `deprecation_warnings=False` in ansible.cfg.
+[DEPRECATION WARNING]: Importing 'to_native' from 'ansible.module_utils._text' is deprecated. This feature will be removed from ansible-core version 2.24. Use ansible.module_utils.common.text.converters instead.
+ok: [localhost]
+
+TASK [database : Utworzenie użytkownika bazy danych] ***************************
+changed: [localhost]
+
+TASK [php : Instalacja PHP i rozszerzeń] ***************************************
+ok: [localhost]
+
+TASK [php : Włączenie modułu PHP w Apache] *************************************
+ok: [localhost]
+
+TASK [app : Kopiowanie aplikacji PHP] ******************************************
+ok: [localhost]
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=12   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+=== Weryfikacja ===
+<h1>LAMP działa!</h1><p>Połączono z bazą danych: lamp_app</p>
