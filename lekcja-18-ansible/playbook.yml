@@ -1,0 +1,11 @@
+---
+- name: Wdrożenie LAMP
+  hosts: localhost
+  connection: local
+  become: yes
+  roles:
+    - base
+    - web
+    - database
+    - php
+    - app

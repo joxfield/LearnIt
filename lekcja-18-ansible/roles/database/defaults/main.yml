@@ -1,0 +1,4 @@
+---
+db_name: lamp_app
+db_user: lamp_user
+db_password: SecurePass123!

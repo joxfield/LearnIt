@@ -1,0 +1,16 @@
+<?php
+$host = 'localhost';
+$db   = '{{ db_name }}';
+$user = '{{ db_user }}';
+$pass = '{{ db_password }}';
+
+$conn = new mysqli($host, $user, $pass, $db);
+
+if ($conn->connect_error) {
+    die("Błąd połączenia: " . $conn->connect_error);
+}
+
+echo "<h1>LAMP działa!</h1>";
+echo "<p>Połączono z bazą danych: {{ db_name }}</p>";
+$conn->close();
+?>

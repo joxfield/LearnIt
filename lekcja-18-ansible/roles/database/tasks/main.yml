@@ -1,0 +1,26 @@
+---
+- name: Instalacja MySQL
+  apt:
+    name:
+      - mysql-server
+      - python3-pymysql
+    state: present
+
+- name: Uruchomienie MySQL
+  service:
+    name: mysql
+    state: started
+    enabled: yes
+
+- name: Utworzenie bazy danych
+  mysql_db:
+    name: "{{ db_name }}"
+    state: present
+    login_unix_socket: /var/run/mysqld/mysqld.sock
+
+- name: Utworzenie użytkownika bazy danych
+  shell: |
+    mysql -e "CREATE USER IF NOT EXISTS '{{ db_user }}'@'localhost' IDENTIFIED BY '{{ db_password }}';"
+    mysql -e "GRANT ALL ON {{ db_name }}.* TO '{{ db_user }}'@'localhost';"
+    mysql -e "FLUSH PRIVILEGES;"
+  become: yes

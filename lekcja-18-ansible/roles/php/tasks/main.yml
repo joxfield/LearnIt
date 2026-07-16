@@ -1,0 +1,16 @@
+---
+- name: Instalacja PHP i rozszerzeń
+  apt:
+    name:
+      - php
+      - php-mysql
+      - php-cli
+      - libapache2-mod-php
+    state: present
+  notify: Restart Apache
+
+- name: Włączenie modułu PHP w Apache
+  apache2_module:
+    name: php
+    state: present
+  notify: Restart Apache

@@ -1,0 +1,13 @@
+---
+- name: Aktualizacja systemu
+  apt:
+    update_cache: yes
+    upgrade: yes
+
+- name: Instalacja podstawowych pakietów
+  apt:
+    name:
+      - curl
+      - wget
+      - unzip
+    state: present
