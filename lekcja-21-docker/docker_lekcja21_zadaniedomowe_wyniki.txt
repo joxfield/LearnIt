@@ -1,0 +1,29 @@
+=== Woluminy ===
+DRIVER    VOLUME NAME
+local     db_data
+local     fe2b26e3b03135d54d3962d90616b91e8766e58737eab3e68a7224beac14aa0b
+=== Sieci ===
+NETWORK ID     NAME          DRIVER    SCOPE
+f39141de0149   app_network   bridge    local
+ea23449f179c   bridge        bridge    local
+c9e6d49de311   host          host      local
+e70bc2ea4c78   none          null      local
+=== Działające kontenery ===
+CONTAINER ID   IMAGE       COMMAND                  CREATED         STATUS         PORTS                                         NAMES
+d1ab278e7de3   postgres    "docker-entrypoint.s…"   2 minutes ago   Up 2 minutes   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp   postgres_db
+c615f063745e   webapp:v1   "python app.py"          8 minutes ago   Up 8 minutes   0.0.0.0:5000->5000/tcp, [::]:5000->5000/tcp   webapp
+=== Sieć app_network ===
+        "Containers": {
+            "c615f063745e076cfaf3d5a68c20523bdbff9d833b5a2382b4b534bb2b71269a": {
+                "Name": "webapp",
+                "EndpointID": "dba5411793304acc702760f8917db24886a8510562d921fd5cb205f7d6eb7107",
+                "MacAddress": "0e:39:42:d6:b3:3f",
+                "IPv4Address": "172.18.0.2/16",
+=== Weryfikacja aplikacji ===
+<h1>Aplikacja działa!</h1>=== Weryfikacja połączenia z DB ===
+<h1>Połączono z bazą danych!</h1>=== Obrazy ===
+IMAGE             ID             DISK USAGE   CONTENT SIZE   EXTRA
+my-ngnix:v1       727cc17668fd        238MB         63.1MB        
+nginx:latest      5a88c9c45479        241MB           66MB        
+postgres:latest   3a82e1f56c8f        650MB          168MB   U    
+webapp:v1         3073aec96fb3        238MB         60.9MB   U    
