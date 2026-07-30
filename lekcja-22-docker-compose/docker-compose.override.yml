@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  web:
+    ports:
+      - "${APP_PORT}:5000"
+    volumes:
+      - .:/app
+
+  adminer:
+    image: adminer:latest
+    ports:
+      - "8080:8080"
