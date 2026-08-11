@@ -1,0 +1,5 @@
+environment_info:
+  temperatura_Dublin: '24'
+services_status:
+  https://api.github.com: 🟢 UP
+  https://google.com: 🟢 UP
