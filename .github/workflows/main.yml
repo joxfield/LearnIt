@@ -19,7 +19,7 @@ jobs:
         with:
           name: build-log
           path: build.log
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/master'
 
   test:
     needs: build
@@ -35,7 +35,7 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout kodu
         uses: actions/checkout@v4
