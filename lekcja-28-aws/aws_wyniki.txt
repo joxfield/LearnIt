@@ -1,0 +1,47 @@
+=== Lista użytkowników IAM ===
+[
+    {
+        "Name": "dev.user",
+        "Created": "2026-08-20T19:03:04+00:00"
+    },
+    {
+        "Name": "john.admin",
+        "Created": "2026-08-20T19:02:47+00:00"
+    },
+    {
+        "Name": "Kamil.admin",
+        "Created": "2026-08-18T18:32:47+00:00"
+    },
+    {
+        "Name": "readonly.user",
+        "Created": "2026-08-20T19:03:29+00:00"
+    }
+]
+=== Bucket S3 ===
+2026-08-20 19:23:31 learnit-bucket-2026
+=== Zawartość bucketa ===
+2026-08-20 19:24:23         15 test.txt
+=== Security Groups ===
+[
+    "default"
+]
+=== AMI Amazon Linux 2 ===
+[
+    {
+        "Name": "amzn2-ami-hvm-2.0.20260803.1-x86_64-ebs",
+        "ID": "ami-00a2259d1359ac769"
+    },
+    {
+        "Name": "amzn2-ami-hvm-2.0.20260817.0-arm64-gp2",
+        "ID": "ami-006122d13d3a931cd"
+    },
+    {
+        "Name": "amzn2-ami-hvm-2.0.20260707.0-arm64-gp2",
+        "ID": "ami-02225a65a85ca7997"
+    }
+]
+=== Lambda Functions ===
+{
+    "Functions": []
+}
+(brak funkcji Lambda)
